@@ -32,26 +32,40 @@
         
         
         <h3>php Style Guide</h3>
-        <pre><code>
-        class TestThing
-        {
-          public $objectProperty;
+        
+        <h4>Naming Conventions</h4>
+        <p>Use Pascal case for classes. Camel case for class properties and methods. Underscores for normal variables and static method names.</p> 
 
-          public function methodName() {
-              ...
-          } // End methodName
-  
-          public static function method_name() {
-              ...
-          }
-  
-        } // End TestThing
+        <h4>Spacing and Braces</h4>
+        <p>Set tabs to always be spaces, and use 4 spaces per indent.</p>
+        <p>Use the Allman style for curly braces for class and function definitions.  The curly brace should be on the next line by itself.  </p>
 
-        function function_name( $argument = null ) {
-        }
+        <h4>Sample</h4>
 
-        $variable_name = 'hi'; //Non-object
-        </code></pre>
+<pre><code>
+class TestThing
+{
+    public $objectProperty;
+
+    public function methodName() {
+        ...
+    } // End methodName
+
+    public static function method_name() 
+    {
+        ...
+    } // End method_name
+
+} // End TestThing
+
+function function_name( $argument = null ) 
+{
+    ...
+} // End function_name
+
+$variable_name = new TestThing(); //Non-object and objects
+</code></pre>
+        
 
       </section>
     </div>
