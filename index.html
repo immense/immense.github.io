@@ -92,14 +92,14 @@ $variable_name = new TestThing(); //Non-object and objects
         <!-- django -->
         <h2>django</h2>
         <p></p>
-        <pre><code class="django">// Chris, put something here...</code></pre>
+        <pre><code class="django"># Chris, put something here...</code></pre>
         <!-- End django -->
         
         
         
         <!-- Ruby on Rails -->
         <h2>Ruby on Rails</h2>
-        <pre><code class="ror">// Chris, put something here...</code></pre>
+        <pre><code class="ror"># Chris, put something here...</code></pre>
         <!-- End Ruby on Rails -->
 
 
@@ -125,6 +125,7 @@ h2 {font-size: 1.6em;}
         <h2>Objective-C</h2>
         <p>Use Pascal case for classes. Camel case constants and prefix with the letter k. Underscores for instance variables</p>
         <p>Set tabs to always be spaces, and use 4 spaces per indent. (Xcode defaults)</p>
+        <p>Typically custom classes (which aren't view controllers) and protocols with a two letter abbreviation of the organization to tip your hat to NeXTSTEP</p>
         
         <h4>Sample</h4>
         
@@ -133,7 +134,7 @@ h2 {font-size: 1.6em;}
 #import <Foundation/Foundation.h>
   
 #define kTestThing 1
-@interface TestThing : NSObject
+@interface INTestThing : NSObject
 
 @property (nonatomic, strong) NSArray *myArray;
 
@@ -146,12 +147,12 @@ h2 {font-size: 1.6em;}
 
 <h5>Implementation</h5>
 <pre><code class="objective-c">
-#import "TestThing.h"
+#import "INTestThing.h"
 
-@interface TestThing()
+@interface INTestThing()
 @end
 
-@implementation TestThing
+@implementation INTestThing
 
 @synthesize myArray = _myArray;
 
