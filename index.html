@@ -4,14 +4,14 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Immense.github.com : Immense Dev Guides" />
+    <meta name="description" content="Immense.github.io : Immense Dev Guides" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/github.css">
-    
+
     <script src="javascripts/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
+
     <title>Immense Networks | Web Dev</title>
   </head>
 
@@ -31,24 +31,24 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>Guidelines</h1>    
-        <p> Always use descriptive variable names. Using acronyms for variable names is frowned upon in this establishment.  
-            You have to realize other people aren't reading your files from top to bottom. They're following stack traces to 
+        <h1>Guidelines</h1>
+        <p> Always use descriptive variable names. Using acronyms for variable names is frowned upon in this establishment.
+            You have to realize other people aren't reading your files from top to bottom. They're following stack traces to
             line numbers.  The less we have to decipher, the better. Don't get uber verbose, that can be equally confusing.</p>
         <p> Use newlines to seperate logical blocks of code. Newlines help guide your eyes.  But don't abuse newlines! Too
             many newlines and nothing stand out.  Use your best judgement, but readability is always priority. </p>
         <p> Learn to use inheritance. If you're copy/pasting templates, you're doing it wrong.</p>
         <p> Comment the end of blocks (closing html tags, closing parens, closing brackets) to help signify it's end.</p>
         <p> Learn git. Use git.</p>
-        
+
         <h1>Conventions</h1>
         <p> Use spaces instead of tabs, and set your tab size to 4 spaces.</p>
         <p> Classes in pretty much all languages are Pascal case.</p>
-        
-        
+
+
         <!-- php Styles -->
         <h2>php</h2>
-        <p>Use Camel case for class properties and methods. Use snake_case for normal variables and static method names.</p> 
+        <p>Use Camel case for class properties and methods. Use snake_case for normal variables and static method names.</p>
         <p>Set tabs to always be spaces, and use 4 spaces per indent.</p>
         <p>Use the Allman style for curly braces for class and function definitions.  The curly brace should be on the next line by itself.</p>
 
@@ -62,14 +62,14 @@
         ...
     } // End methodName
 
-    public static function method_name() 
+    public static function method_name()
     {
         ...
     } // End method_name
 
 } // End TestThing
 
-function function_name( $argument = null ) 
+function function_name( $argument = null )
 {
     ...
 } // End function_name
@@ -77,26 +77,26 @@ function function_name( $argument = null )
 $variable_name = new TestThing(); //Non-object and objects
         </code></pre>
         <!-- End php -->
-        
-        
-        
+
+
+
         <h2>symfony</h2>
         <p> Projects should be broken into logical modules. Typically a main nav item and it's subnav items can be made into a module.
             Module names should be camel cased. Pretty much everything can be containted in a single app (which by convention is named frontend).</p>
-        
+
         <h4>Sample</h4>
         <pre><code class="symfony">// Erick, put something here...</code></pre>
 
-        
-        
+
+
         <!-- django -->
         <h2>django</h2>
         <p></p>
         <pre><code class="python"># Chris, put something here...</code></pre>
         <!-- End django -->
-        
-        
-        
+
+
+
         <!-- Ruby on Rails -->
         <h2>Ruby on Rails</h2>
         <pre><code class="ror"># Chris, put something here...</code></pre>
@@ -117,22 +117,22 @@ $variable_name = new TestThing(); //Non-object and objects
 h2, h2, h2, h2 {font-weight: bold; text-transform: capitalize;}
 h2 {font-size: 1.6em;}
         </code></pre>
-        <!-- End CSS -->        
-        
+        <!-- End CSS -->
 
 
-        <!-- Objective-C -->        
+
+        <!-- Objective-C -->
         <h2>Objective-C</h2>
         <p>Use Pascal case for classes. Camel case constants and prefix with the letter k. Underscores for instance variables</p>
         <p>Set tabs to always be spaces, and use 4 spaces per indent. (Xcode defaults)</p>
         <p>Typically custom classes (which aren't view controllers) and protocols with a two letter abbreviation of the organization to tip your hat to NeXTSTEP</p>
-        
+
         <h4>Sample</h4>
-        
+
         <h5>Header</h5>
         <pre><code class="objective-c">
 #import <Foundation/Foundation.h>
-  
+
 #define kTestThing 1
 @interface INTestThing : NSObject
 
@@ -172,10 +172,10 @@ h2 {font-size: 1.6em;}
 
 @end
         </code></pre>
-        
+
         <!-- End Objective-C -->
-        
-        
+
+
         <!-- git -->
         <h2>git</h2>
 		<p>Projects should have a prod (or master), dev, and staging branches at the minimum.</p>
