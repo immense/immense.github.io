@@ -116,9 +116,9 @@ h2 {font-size: 1.6em;}
 
         <!-- Objective-C -->
         <h2>Objective-C</h2>
-        <p>Use Pascal case for classes. Camel case constants and prefix with the letter k. Underscores for instance variables</p>
-        <p>Set tabs to always be spaces, and use 4 spaces per indent. (Xcode defaults)</p>
         <p>Typically custom classes (which aren't view controllers) and protocols begin with a <em>two</em> or <em>three</em> letter abbreviation of the organization to tip your hat to NeXTSTEP.</p>
+        <p>Use Pascal case for classes. Use Pascal case for constants and prefix with the a <em>two</em> or <em>three</em> letter abbreviation. Underscores for instance variables</p>
+        <p>Set tabs to always be spaces, and use 4 spaces per indent. (Xcode defaults)</p>
 
         <pre>Note: Cocoapods recommends a three letter abbreviation to further prevent the collision of class names.</pre>
 
@@ -128,7 +128,7 @@ h2 {font-size: 1.6em;}
         <pre><code class="objective-c">
 #import <Foundation/Foundation.h>
 
-#define kTestThing 1
+#define INTestThingDebug 1
 @interface INTestThing : NSObject
 
 @property (nonatomic, strong) NSArray *myArray;
@@ -171,8 +171,8 @@ h2 {font-size: 1.6em;}
         <!-- End Objective-C -->
 
 
-        <!-- git -->
-        <h2>git</h2>
+        <!-- Git -->
+        <h2>Git</h2>
 		<p>Projects should have a prod (or master), dev, and staging branches at the minimum.</p>
 		<p>New branches should be created to add a specific feature/module or refactoring.
 			Submodules may be used to separate components of an application, for example, base actions, models, etc.
